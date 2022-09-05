@@ -121,15 +121,24 @@
       <section class="sorting-hotels">
         <h2 class="visually-hidden">Сортировка результатов поиска</h2>
         <p class="section-title">Найдено гостиниц: 38</p>
-        <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать отели</button>
-        </form>
+        <details class="select">
+          <summary class="select-button">Сначала дешёвые</summary>
+
+          <ul class="select-menu">
+            <li class="select-item select-item-active">
+              <a class="select-option" href="#">Сначала дешёвые</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала дорогие</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала популярные</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">Сначала комфортные</a>
+            </li>
+          </ul>
+        </details>
         <a class="button" href="#">
           <span class="visually-hidden">Показать таблицей</span>
         </a>
