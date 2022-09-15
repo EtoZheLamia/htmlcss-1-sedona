@@ -101,7 +101,7 @@
                 </label>
               </li>
           </fieldset>
-          <fieldset class="hotels-filter-group">
+          <fieldset class="hotels-filter-group hotel-filter-price">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <label class="catalog-filter-label">
               <input class="catalog-filter-input" type="number" name="min-price"> от
@@ -116,13 +116,15 @@
               <span class="visually-hidden">Изменить максимальную цену.</span>
             </button>
           </fieldset>
-          <button class="btn-blue button-filter" type="submit">Применить</button>
-          <button class="button-cancel" type="reset" >Сбросить</button>
+          <div class="hotels-filter-button">
+            <button class="btn-blue button-filter" type="submit">Применить</button>
+            <button class="button-cancel" type="reset" >Сбросить</button>
+          </div>
         </form>
       </section>
     </div>
       <section class="sorting-hotels">
-        <h2 class="visually-hidden">Сортировка результатов поиска</h2>
+        <h2 class="visually-hidden" hidden>Сортировка результатов поиска</h2>
         <p class="section-title">Найдено гостиниц: 38</p>
         <details class="select">
           <summary class="select-button">Сначала дешёвые</summary>
@@ -142,15 +144,23 @@
             </li>
           </ul>
         </details>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать таблицей</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточками</span>
-        </a>
+        <ul class="sorting-hotels-buttons">
+          <li>
+            <a class="button" href="#">
+            <span class="visually-hidden">Показать таблицей</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
+          <li>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать карточками</span>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="hotels">
         <ul class="hotels-list">
@@ -204,7 +214,8 @@
           </li>
         </ul>
         <button class="btn-blue pagination-show-more" type="button">Загрузить ещё</button>
-        <ul class="pagination">
+        <div class="pagination-wrapper">
+          <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -223,8 +234,8 @@
           <li class="pagination-item">
             <a class="pagination-link btn-blue" href="#">10</a>
           </li>
-        </ul>
-        <form class="show-hotels">
+          </ul>
+          <form class="show-hotels">
           <label for="sorting">Гостиниц на странице:</label>
           <select class="select-control" id="sorting" name="show-hotels">
             <option value="one">1</option>
@@ -233,7 +244,8 @@
             <option value="four">4</option>
           </select>
           <button class="visually-hidden" type="submit">Отсортировать отели</button>
-        </form>
+          </form>
+      </div>
       </section>
     </main>
     <footer class="page-footer">

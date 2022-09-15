@@ -223,7 +223,6 @@ body {
   display: block;
 }
 
-
 /* catalog
 main-inner */
 .search-wrapper {
@@ -241,6 +240,7 @@ main-inner */
   font-size: 16px;
   line-height: 21px;
 }
+/* Фильтр отелей */
 .hotels-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -259,7 +259,29 @@ input[type="number"] {
   font-size: 18px;
   line-height: 23px;
 }
-
+.hotels-filter {
+  display: flex;
+  justify-content: space-around;
+}
+.hotels-filter-group {
+  width: 150px;
+  border:none;
+  padding: 0;
+  margin: 0;
+}
+.hotels-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hotel-filter-price {
+  width: 300px;
+}
+.hotels-filter-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .button-cancel {
   font-weight: 400;
   font-size: 18px;
@@ -269,8 +291,22 @@ input[type="number"] {
   background:none;
   border:none
 }
+/* Сортировка отелей */
 .sorting-hotels .section-title {
   line-height: 39px;
+}
+.sorting-hotels {
+  display: flex;
+  justify-content: space-between;
+}
+/* отели */
+.hotels {
+  display: flex;
+  flex-direction: column;
+}
+.hotels-list {
+  display:flex;
+  flex-wrap: wrap;
 }
 .hotel-card-link {
   text-decoration: none;
@@ -281,7 +317,6 @@ input[type="number"] {
   line-height: 31px;
   color: #000000;
 }
-
 .hotel-card-type,
 .hotel-card-price {
   font-weight: 400;
@@ -296,6 +331,19 @@ input[type="number"] {
   background: #F2F2F2;
   border-radius: 4px;
 }
+/* Пагинация */
+.pagination-show-more {
+  width: 620px;
+  margin: 0 auto;
+}
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination {
+  display: flex;
+  list-style: none;
+}
 .pagination-show-more,
 .pagination-link {
   font-size: 20px;
@@ -308,3 +356,4 @@ input[type="number"] {
 .show-hotels {
   line-height: 23px;
 }
+
