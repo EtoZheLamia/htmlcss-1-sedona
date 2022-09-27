@@ -104,10 +104,12 @@
           <fieldset class="hotel-filter-group hotel-filter-price">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <label class="catalog-filter-label">
-              <input class="catalog-filter-input" type="number" name="min-price"> от
+              <input class="catalog-filter-input" type="number" name="min-price">
+              <span>от</span>
             </label>
             <label class="catalog-filter-label">
-              <input class="catalog-filter-input" type="number" name="max-price" value="9000"> до
+              <input class="catalog-filter-input" type="number" name="max-price" value="9000">
+              <span>до</span>
             </label>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -216,28 +218,28 @@
         <button class="btn-blue pagination-show-more" type="button">Загрузить ещё</button>
         <div class="pagination-wrapper">
           <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link btn-blue" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link btn-blue" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link btn-blue" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link btn-blue" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link btn-blue" href="#">10</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link btn-blue" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link btn-blue" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link btn-blue" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link btn-blue" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link btn-blue" href="#">10</a>
+            </li>
           </ul>
           <form class="show-hotels">
           <label for="sorting">Гостиниц на странице:</label>
-          <select class="select-control" id="sorting" name="show-hotels">
+          <select class="sorting" id="sorting" name="show-hotels">
             <option value="one">1</option>
             <option value="two">2</option>
             <option value="three">3</option>
