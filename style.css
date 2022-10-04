@@ -34,31 +34,26 @@ body {
   flex-grow: 1;
 }
 /* Общие стили для кнопок */
-.btn-brown {
+.button{
+  display: inline-block;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  background: #756257;
   border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
   border:none;
+}
+.btn-brown {
+  background: #756257;
 }
 .btn-blue{
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
   background: #83B3D3;
-  border-radius: 4px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
-  border:none;
 }
-input[type="button"]{
+input[type="button"],
+button{
   cursor: pointer;
 }
 /* Общие стили для заголовков и описаний */
@@ -136,7 +131,6 @@ input[type="button"]{
   margin-bottom: -10px;
 }
 .navigation-btn {
-  display: block;
   padding: 9px 34px;
 }
 
@@ -244,7 +238,7 @@ input[type="button"]{
   background-position: left 168px top 85px;
 }
 /* Бронирование */
-.search-button.btn-brown{
+.search-button{
   font-size: 20px;
   line-height: 36px;
   display: block;
@@ -325,9 +319,16 @@ input[type="button"]{
   flex-wrap: wrap;
 }
 .social-item {
-  min-height: 18px;
-  min-width: 42px;
   position: relative;
+
+
+}
+.social-link {
+  fill: #83B3D3;
+  padding: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 .social-item:last-child {
   margin-right: 0;
@@ -641,7 +642,6 @@ input[type="number"] {
   color: #756257;
   outline: none;
 }
-
 .navigation-link:active,
 .htmlacademy-link:active,
 .footer-contacts-phone:active  {
@@ -650,7 +650,6 @@ input[type="number"] {
   color: rgba(117, 98, 87);
   outline: none;
 }
-
 .navigation-link-current {
   font-weight: 700;
   font-size: 20px;
@@ -667,3 +666,39 @@ input[type="number"] {
   left: 17px;
   height: 2px;
 }
+.btn-brown:focus{
+  outline: 3px solid #83B3D3;
+}
+.btn-brown:hover {
+  background-color: #615048;
+  outline: none;
+}
+.btn-brown:active{
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+.social-link:focus{
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+.social-link:hover{
+  fill: #68A2CA;
+  outline: none;
+}
+.social-link:active {
+  fill: #68A2CA;
+  opacity: 0.3;
+  outline: none;
+}
+input[type="button"]:focus{
+  outline: 3px solid #756257;
+}
+input[type="button"]:hover{
+  background-color: #68A2CA;
+}
+input[type="button"]:active{
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
