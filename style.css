@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
@@ -19,7 +19,7 @@
   }
 html {
   height: 100%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -27,7 +27,7 @@ body {
   line-height: 21px;
   color: #333333;
   min-height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin: 0 auto;
@@ -45,7 +45,7 @@ body {
   border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border:none;
 }
@@ -53,7 +53,7 @@ body {
   background: #756257;
 }
 .btn-blue{
-  background: #83B3D3;
+  background: #83b3d3;
 }
 input[type="button"],
 button{
@@ -77,12 +77,12 @@ button{
 }
 .navigation {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: 139px 345px auto 264px;
   gap: 30px;
 }
 .navigation-list {
   display:grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(3, auto);
   align-items: center;
 }
 .navigation-link {
@@ -96,7 +96,7 @@ button{
   padding: 0 17px;
 }
 .navigation-user {
-  max-width:264px;
+  grid-column: 4/5;
 }
 .navigation-user .navigation-link{
   min-height: 66px;
@@ -158,8 +158,8 @@ button{
   grid-template-columns: repeat(3, 400px);
 }
 .advantage-item-wrapper {
-  color:#FFFFFF;
-  background-color: #83B3D3;
+  color:#ffffff;
+  background-color: #83b3d3;
   display:grid;
   gap: 30px;
   padding: 98px 90px 87px;
@@ -190,7 +190,7 @@ button{
   text-align: center;
 }
 .advantage-item-wrapper > .advantages-title {
-  color:white;
+  color:#ffffff;
 }
 .advantage-item:nth-child(odd),
 .advantage-item-inner:nth-child(odd){
@@ -199,29 +199,26 @@ button{
 .advantage-item:nth-last-child(2){
   background: rgba(131, 179, 211, 0.2);
 }
-.advantages-text {
-  line-height: 21px;
-}
 .advantages-img {
   display: block;
   grid-column: span 2;
   object-fit: cover;
 }
 .advantages {
-  background: url(img/indexbackground.jpg) top no-repeat;
+  background: url("img/indexbackground.jpg") top no-repeat;
 }
 .advantage-item-inner:first-child{
-  background-image: url('img/icon/house.svg');
+  background-image: url("img/icon/house.svg");
   background-repeat: no-repeat;
   background-position: left 163px top 89px;
 }
 .advantage-item-inner:nth-child(2){
-  background-image: url('img/icon/burger.svg');
+  background-image: url("img/icon/burger.svg");
   background-repeat: no-repeat;
   background-position: left 163px top 91px;
 }
 .advantage-item-inner:nth-child(3){
-  background-image: url('img/icon/gift.svg');
+  background-image: url("img/icon/gift.svg");
   background-repeat: no-repeat;
   background-position: left 168px top 85px;
 }
@@ -248,14 +245,14 @@ button{
   margin-bottom: 46px;
 }
 .subscribe-inner input[type="email"]{
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 0px 10px 10px 0px;
 }
 .subscribe-inner {
   padding-bottom: 141px;
 }
 .subscribe-main {
-  background-image: url(img/backgroundfooter.jpg);
+  background-image: url("img/backgroundfooter.jpg");
   background-repeat:no-repeat;
   background-position:center;
   background-size: cover;
@@ -286,7 +283,7 @@ button{
 .subscribe-form input[type="email"]:focus,
 .modal-close-button:focus,
 .field:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 .subscribe-form input[type="email"]:hover,
 .modal-close-button:hover,
@@ -318,7 +315,7 @@ button{
   position: relative;
 }
 .social-link {
-  fill: #83B3D3;
+  fill: #83b3d3;
   padding: 10px;
   display: inline-block;
   width: 22px;
@@ -344,7 +341,7 @@ button{
   padding-left: 5px;
 }
 .search-wrapper {
-  background: url(img/catalog/catalogbackground.jpg) no-repeat;
+  background: url("img/catalog/catalogbackground.jpg") no-repeat;
   background-color:#756257;
   color: #ffffff;
   font-weight: 700;
@@ -374,14 +371,14 @@ button{
   height: 8px;
   left: 27px;
   top: 8px;
-  background-image: url('img/icon/nav-link 1.svg');
+  background-image: url("img/icon/nav-link 1.svg");
 }
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  color:#FFFFFF;
+  color:#ffffff;
   padding: 0px 5px;
 }
 .breadcrumbs-home{
@@ -425,7 +422,7 @@ button{
   left: 3px;
   width: 12.2px;
   height: 9.9px;
-  background-image: url(img/icon/checkbox.svg) ;
+  background-image: url("img/icon/checkbox.svg") ;
   content: "";
 }
 .control-input:hover + .control-mark {
@@ -453,9 +450,9 @@ button{
 .catalog-filter-input {
   background:transparent;
   outline: none;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -505,7 +502,7 @@ button{
 }
 .range-bar {
   position: absolute;
-  background-color:#FFFFFF;
+  background-color:#ffffff;
   width: 227px;
   height: 4px;
 }
@@ -513,7 +510,7 @@ button{
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   border: none;
 }
@@ -521,11 +518,11 @@ button{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .range-toggle:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   outline:none;
 }
 .range-toggle:active {
-  border: 2px solid #83B3D3;
+  border: 2px solid #83b3d3;
   outline:none;
 }
 .toggle-min {
@@ -553,7 +550,7 @@ button{
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background:none;
   border:none;
   margin: 0 35px;
@@ -596,7 +593,7 @@ button{
 }
 .select-button::after{
   content: "";
-  background-image: url(img/icon/variant=arrow.svg);
+  background-image: url("img/icon/variant=arrow.svg");
   background-repeat:no-repeat;
   background-position: 50% 50%;
 }
@@ -610,7 +607,7 @@ button{
   top: 100%;
   width: 100%;
   box-sizing:border-box;
-  background-color:#FFFFFF;
+  background-color:#ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 }
@@ -622,7 +619,7 @@ button{
   color: #333333;
 }
 .select-option:hover{
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .select-option-active {
   background-color: #E6E6E6;
@@ -690,7 +687,7 @@ button{
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px;
   padding: 10px 33px;
   grid-column: 1/-1;
@@ -701,10 +698,10 @@ button{
   padding: 9px;
 }
 .hotel-card-chosen {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 .star {
-  background-image: url(img/icon/star.svg);
+  background-image: url("img/icon/star.svg");
   background-repeat: repeat-x;
   background-position: 0 50%;
   background-size: 23px 17px;
@@ -752,7 +749,7 @@ button{
   padding: 14px;
 }
 .pagination-current {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px;
   display: block;
   text-align: center;
@@ -782,7 +779,7 @@ button{
 }
 .footer-contacts-phone:focus,
 .htmlacademy-link:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
   color: #756257;
 }
@@ -818,7 +815,7 @@ button{
   height: 2px;
 }
 .btn-brown:focus{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 .btn-brown:hover {
   background-color: #615048;
@@ -830,15 +827,15 @@ button{
   outline: none;
 }
 .social-link:focus{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 .social-link:hover{
-  fill: #68A2CA;
+  fill: #68a2ca;
   outline: none;
 }
 .social-link:active {
-  fill: #68A2CA;
+  fill: #68a2ca;
   opacity: 0.3;
   outline: none;
 }
@@ -847,17 +844,17 @@ button{
 }
 .button-filter:hover,
 .btn-blue:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 .button-filter:active,
 .btn-blue:active  {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
 .breadcrumbs-link:focus,
 .button-cancel:focus,
 .hotel-card-link:focus   {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 .breadcrumbs-link:hover,
@@ -872,13 +869,13 @@ button{
   opacity: 0.3;
 }
 .button-filter:focus {
-  background-color: #68A2CA;
-  outline: 3px solid #FFFFFF;
+  background-color: #68a2ca;
+  outline: 3px solid #ffffff;
 }
 .select:hover,
 .card-grid-toggle:hover,
 .card-grid-toggle:focus {
-  border: 2px solid #83B3D3;
+  border: 2px solid #83b3d3;
   outline: none;
 }
 .card-grid-toggle:active{
@@ -912,7 +909,7 @@ button{
   position: relative;
   margin: auto;
   padding: 62px 71px 67px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   width: 715px;
@@ -925,7 +922,7 @@ button{
   position: absolute;
   width: 53px;
   height: 53px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius:50%;
   border:none;
   outline: none;
@@ -978,7 +975,7 @@ button{
   grid-template-columns: 50px 33px 50px;
 }
 .number-button {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border:none;
   display:flex;
@@ -988,7 +985,7 @@ button{
 }
 .field {
   border:none;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px;
   font-weight: 700;
   font-family: inherit;
@@ -1028,7 +1025,7 @@ button{
   opacity: 1;
 }
 .number-button:focus .button-icon {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   border-radius: 4px;
 }
 .field-title-info {
@@ -1042,11 +1039,11 @@ button{
   height: 25px;
   margin-right: 5px;
   margin-left: 10px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(img/icon/modal/inf.svg);
+  background-image: url("img/icon/modal/inf.svg");
 }
 .field-info-text {
   position: absolute;
@@ -1056,7 +1053,7 @@ button{
   border-radius: 10px;
   width: 256px;
   height: 143px;
-  color:#FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1072,8 +1069,8 @@ button{
   left: 118px;
   width: 19px;
   height: 9px;
-  background-image: url(img/icon/modal/triangle.svg);
+  background-image: url("img/icon/modal/triangle.svg");
 }
-.field-info:hover .field-info-text{
-  display:block
+.field-info:hover .field-info-text {
+  display: block;
 }
